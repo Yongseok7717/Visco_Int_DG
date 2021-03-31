@@ -12,7 +12,7 @@ For more details of the model problem, we refer to the autour's [PhD thesis (Cha
 All codes are constructed in Python 3.6.9 and FEniCS(dolfin) 2019.1.0.
 - **out_S1_matrix.py**: Solve the viscoelasticity problem with the displacement form.
 - **out_S2_matrix.py**: Solve the viscoelasticity problem with the velocity form.
-- **graphic_linear.py** and **graphic_quad.py**: Illustrate graphs of numerical errors on *log-log* scale when $h\approx\Delta t$.
+- **graphic_linear.py** and **graphic_quad.py**: Illustrate graphs of numerical errors on *log-log* scale when $ h\approx\Delta t $.
 - **main.sh**: Main task to run (consider both examples with linear polinomial basis as well as quadratic).
 
 
