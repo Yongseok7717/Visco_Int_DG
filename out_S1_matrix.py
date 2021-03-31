@@ -247,7 +247,7 @@ for i in range(iMin,iMax):
             # update data and solve for the next time level
             tn = n*dt; ux.tn = tn; wx.tn = tn; fav.tn = tn; g0av.tn = tn; g1av.tn = tn;
             b = assemble(L, tensor=b)
-            b2=(2.0/dt*M*w0.vector().get_local()+(2.0/dt/dt*M-CurlA+1.0/dt*J)*u0.vector().get_local()+Ast*(2.0*tau1/(2.0*tau1+dt)*psi01.vector().get_local()+2.0*tau2/(2.0*tau2+dt)*psi02.vector().get_local()))
+            b2=(2.0/dt*M*w0.vector().get_local()+(2.0/dt/dt*M-CurlA+1.0/dt*J)*u0.vector().get_local()+A*(2.0*tau1/(2.0*tau1+dt)*psi01.vector().get_local()+2.0*tau2/(2.0*tau2+dt)*psi02.vector().get_local()))
             b.add_local(b2)
             
             solver = LUSolver('mumps')
