@@ -7,7 +7,7 @@ Numerical schemes are based on *spatial finite element methods* (CG/DG) and *Cra
 
 In this numerical experiments, we consider DG FEM for dynamic linear viscoelasticity model with internal variables.
 
-For more details of the model problem, we refer to the autour's PhD thesis (Chapter 4).
+For more details of the model problem, we refer to the autour's [PhD thesis (Chapter 4)](https://bura.brunel.ac.uk/handle/2438/21084).
 
 All codes are constructed in Python 3.6.9 and FEniCS(dolfin) 2019.1.0.
 - **out_S1_matrix.py**: Solve the viscoelasticity problem with the displacement form.
